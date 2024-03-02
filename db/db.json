@@ -14,7 +14,7 @@
         "qtd": 2
       },
       {
-        "item": "red alloy cable",
+        "item": "1x red alloy cable",
         "qtd": 3
       },
       {
@@ -33,5 +33,240 @@
       }
     ],
     "qtd": 1
+  },
+
+  "resistor": {
+    "itens": [
+      {
+        "item": "stick resin",
+        "qtd": 2
+      },
+      {
+        "item": "paper",
+        "qtd": 2
+      },
+      {
+        "item": "fine cooper wire",
+        "qtd": 2
+      },
+      {
+        "item": "coal dust",
+        "qtd": 1
+      }
+    ],
+    "qtd": 2
+  },
+
+  "vacuum tube": {
+    "itens": [
+      {
+        "item": "steel bolt",
+        "qtd": 2
+      },
+      {
+        "item": "1x Cooper Wire",
+        "qtd": 3
+      },
+      {
+        "item": "Glass Tube",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },
+
+  "resin printed circuit board": {
+    "itens": [
+      {
+        "item": "resin circuit board",
+        "qtd": 1
+      },
+      {
+        "item": "1x Cooper Wire",
+        "qtd": 8
+      }
+    ],
+    "qtd": 1
+  },
+
+  "resin circuit board": {
+    "itens": [
+      {
+        "item": "wood plank",
+        "qtd": 1
+      },
+      {
+        "item": "sticky resin",
+        "qtd": 2
+      }
+    ],
+    "qtd": 1
+  },
+
+  "1x red alloy cable": {
+    "itens": [
+      {
+        "item": "1x red alloy cable",
+        "qtd": 1
+      },
+      {
+        "item": "Rubber Sheet",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },
+
+  "rubber sheet": {
+    "itens": [
+      {
+        "item": "rubber ingot",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },
+
+
+  "rubber ingot": {
+    "itens": [
+      {
+        "item": "sulfur dust",
+        "qtd": 1
+      },
+      {
+        "item": "raw rubber pulp",
+        "qtd": 3 
+      }
+    ],
+    "qtd": 1
+  },
+
+  "1x red alloy wire": {
+    "itens": [
+      {
+        "item": "red alloy plate",
+        "qtd": 1
+      },
+      {
+        "item": "tools/wire_cutter",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },  
+
+  "red alloy plate": {
+    "itens": [
+      {
+        "item": "red alloy ingot",
+        "qtd": 3
+      }
+    ],
+    "qtd": 2
+  },
+
+  "red alloy ingot": {
+    "itens": [
+      {
+        "item": "redstone dust",
+        "qtd": 4
+      },
+      {
+        "item": "cooper ingot",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },  
+
+  "cooper wire": {
+    "itens": [
+      {
+        "item": "cooper plate",
+        "qtd": 1
+      },
+      {
+        "item": "tools/wire_cutter",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },    
+
+  "cooper plate": {
+    "itens": [
+      {
+        "item": "cooper ingot",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },   
+
+
+  "cooper plate": {
+    "itens": [
+      {
+        "item": "cooper ingot",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },   
+
+  "fine cooper wire": {
+    "itens": [
+      {
+        "item": "cooper foil",
+        "qtd": 1
+      },
+      {
+        "item": "tools/wire_cutter",
+        "qtd": 1
+      } 
+    ],
+    "qtd": 1
+  },   
+
+  "cooper foil": {
+    "itens": [
+      {
+        "item": "cooper plate",
+        "qtd": 1
+      },
+      {
+        "item": "tools/hammer",
+        "qtd": 1
+      } 
+    ],
+    "qtd": 1
+  },   
+
+
+  "steel bolt": {
+    "itens": [
+      {
+        "item": "steel rod",
+        "qtd": 1
+      },
+      {
+        "item": "tools/saw",
+        "qtd": 1
+      } 
+    ],
+    "qtd": 2
+  },   
+
+  "steel rod": {
+    "itens": [
+      {
+        "item": "steel ingot",
+        "qtd": 1
+      }
+    ],
+    "qtd": 2
   }
+
+
 }
