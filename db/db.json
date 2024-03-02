@@ -180,7 +180,7 @@
     "qtd": 1
   },  
 
-  "cooper wire": {
+  "1x cooper wire": {
     "itens": [
       {
         "item": "cooper plate",
@@ -193,17 +193,6 @@
     ],
     "qtd": 1
   },    
-
-  "cooper plate": {
-    "itens": [
-      {
-        "item": "cooper ingot",
-        "qtd": 1
-      }
-    ],
-    "qtd": 1
-  },   
-
 
   "cooper plate": {
     "itens": [
