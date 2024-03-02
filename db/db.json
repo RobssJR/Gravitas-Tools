@@ -64,12 +64,12 @@
         "qtd": 2
       },
       {
-        "item": "1x Cooper Wire",
+        "item": "1x cooper wire",
         "qtd": 3
       },
       {
-        "item": "Glass Tube",
-        "qtd": 1
+        "item": "glass tube",
+        "qtd": 1  
       }
     ],
     "qtd": 1
@@ -82,7 +82,7 @@
         "qtd": 1
       },
       {
-        "item": "1x Cooper Wire",
+        "item": "1x cooper wire",
         "qtd": 8
       }
     ],
