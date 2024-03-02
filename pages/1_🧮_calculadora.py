@@ -1,26 +1,47 @@
 import json
 import streamlit as st
 
-def calcular_materiais(item, quantidade, receitas):
-    if item not in receitas:
-        return {item: quantidade}
+def calcular_materiais(item, quantidade, receitas, materiais_necessarios=None):
+    if materiais_necessarios is None:
+        materiais_necessarios = {}
 
-    materiais_necessarios = {}
+    pilha = [(item, quantidade)]
 
-    for componente in receitas[item]["itens"]:
-        sub_item = componente["item"]
-        sub_quantidade = componente["qtd"]
-        total_sub_quantidade = quantidade * sub_quantidade
+    while pilha:
+        item_atual, qtd_atual = pilha.pop()
 
-        sub_materiais = calcular_materiais(sub_item, total_sub_quantidade, receitas)
-
-        for sub_material, sub_qtd in sub_materiais.items():
-            if sub_material in materiais_necessarios:
-                materiais_necessarios[sub_material] += sub_qtd
+        if item_atual not in receitas:
+            if item_atual in materiais_necessarios:
+                materiais_necessarios[item_atual] += qtd_atual
             else:
-                materiais_necessarios[sub_material] = sub_qtd
+                materiais_necessarios[item_atual] = qtd_atual
+        else:
+            if item_atual in materiais_necessarios:
+                materiais_necessarios[item_atual] += qtd_atual
+            else:
+                materiais_necessarios[item_atual] = qtd_atual
 
-    return materiais_necessarios
+                for componente in receitas[item_atual]["itens"]:
+                    sub_item = componente["item"]
+                    sub_quantidade = componente["qtd"]
+
+                    if "tool" in sub_item.lower():
+                        # Sempre considera 1 para itens do tipo "tool"
+                        total_sub_quantidade = 1
+                    else:
+                        total_sub_quantidade = qtd_atual * sub_quantidade
+
+                    pilha.append((sub_item, total_sub_quantidade))
+
+    # Agrupa os itens iguais e soma as quantidades
+    materiais_agrupados = {}
+    for material, qtd in materiais_necessarios.items():
+        if material in materiais_agrupados:
+            materiais_agrupados[material] += qtd
+        else:
+            materiais_agrupados[material] = qtd
+
+    return materiais_agrupados
 
 def main():
     st.title("Calculadora de Materiais")
@@ -36,6 +57,7 @@ def main():
         materiais_necessarios = calcular_materiais(item_desejado, quantidade_desejada, receitas)
 
         st.subheader(f"Materiais necessários para {quantidade_desejada} {item_desejado}:")
+
         for material, qtd in materiais_necessarios.items():
             st.write(f"{material}: {qtd}")
 
