@@ -1,0 +1,37 @@
+{
+  "basic electronic circuit": {
+    "itens": [
+      {
+        "item": "resistor",
+        "qtd": 2
+      },
+      {
+        "item": "steel plate",
+        "qtd": 1
+      },
+      {
+        "item": "vacuum tube",
+        "qtd": 2
+      },
+      {
+        "item": "red alloy cable",
+        "qtd": 3
+      },
+      {
+        "item": "resin printed circuit board",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  },
+
+  "steel plate": {
+    "itens": [
+      {
+        "item": "steel",
+        "qtd": 1
+      }
+    ],
+    "qtd": 1
+  }
+}
